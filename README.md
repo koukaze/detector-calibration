@@ -1,6 +1,6 @@
 # Detector calibration with likelihood fits
 
-Estimate the energy response and resolution of a detector from a calibration sample, comparing sample statistics, separate Gaussian likelihood fits and a simultaneous event-level likelihood. The complete analysis is in [calibration.ipynb](calibration.ipynb), with numerical and plotting helpers in `s1_sol/`.
+Estimate the energy response and resolution of a detector from a calibration sample, comparing sample statistics, separate Gaussian likelihood fits and a simultaneous event-level likelihood. The complete analysis is in [calibration.ipynb](calibration.ipynb), with numerical and plotting helpers in `calibration_tools/`.
 
 ## Model and methods
 
@@ -36,9 +36,9 @@ The notebook contains the full comparison and bootstrap plots. [results.json](re
 
 ## Data
 
-The calibration problem and input sample were supplied by Matt Kenzie for the S1 coursework. The sample represents the course's detector-response model and is not distributed here.
+The calibration problem and input sample were supplied by Matt Kenzie. The sample follows the specified detector-response model and is not distributed here.
 
-Place the course-provided `sample.csv` in `data/`, or set `S1_DATA_PATH` to its location. The CSV requires `E_true` and `E_rec` columns, both in GeV. The results above use 1000 entries at each true energy from 20 to 80 GeV in steps of 10 GeV. Other input samples will give different estimates.
+Place the supplied `sample.csv` in `data/`, or set `CALIBRATION_DATA_PATH` to its location. The CSV requires `E_true` and `E_rec` columns, both in GeV. The results above use 1000 entries at each true energy from 20 to 80 GeV in steps of 10 GeV. Other input samples will give different estimates.
 
 ## Run
 
@@ -62,5 +62,5 @@ jupyter nbconvert --to notebook --execute --inplace \
 
 ## References
 
-- Matt Kenzie, *S1 Statistical Methods coursework*, Cambridge MPhil in Data Intensive Science, 2025/26: calibration model and input sample.
+- Matt Kenzie, *Statistical Methods*: calibration model and input sample.
 - [iminuit fitting and uncertainty estimation](https://scikit-hep.org/iminuit/notebooks/basic.html) and [cost functions](https://scikit-hep.org/iminuit/notebooks/cost_functions.html).
