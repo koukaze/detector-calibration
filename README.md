@@ -1,7 +1,5 @@
 # Detector calibration with likelihood fits
 
-**Peijing Pang · Cambridge MPhil in Data Intensive Science · S1 Statistical Methods coursework (2025/26)**
-
 Estimate the energy response and resolution of a detector from a calibration sample, comparing sample statistics, separate Gaussian likelihood fits and a simultaneous event-level likelihood. The complete analysis is in [calibration.ipynb](calibration.ipynb), with numerical and plotting helpers in `s1_sol/`.
 
 ## Model and methods
@@ -20,7 +18,7 @@ HESSE errors are compared with standard deviations from 2500 whole-sample bootst
 
 ## Results
 
-For the coursework sample of 7000 entries, the simultaneous fit gives:
+For the supplied calibration sample of 7000 entries, the simultaneous fit gives:
 
 | Parameter | Estimate ± HESSE standard error | Unit |
 |---|---:|---|
